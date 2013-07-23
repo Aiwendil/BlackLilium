@@ -23,10 +23,10 @@ class Engine
 {
   public:
     Engine();
-    Engine(const Engine &other);
     ~Engine();
+  private:
     Engine &operator=(const Engine &other);
-    bool operator==(const Engine &other);
+    Engine(const Engine &other);
 
 };
 

@@ -32,13 +32,3 @@ Engine::~Engine()
 {
 
 }
-
-Engine::operator=(const Engine &other)
-{
-
-}
-
-Engine::operator==(const Engine &other)
-{
-
-}
