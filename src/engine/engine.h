@@ -24,9 +24,11 @@ class Engine
   public:
     Engine();
     ~Engine();
+    void run();
   private:
     Engine &operator=(const Engine &other);
     Engine(const Engine &other);
+    bool running;
 
 };
 

@@ -18,17 +18,32 @@
 
 #include "engine.h"
 
-Engine::Engine()
+#include <iostream>
+
+Engine::Engine() : running(false)
 {
 
 }
 
-Engine::Engine(const Engine &other)
-{
-
-}
 
 Engine::~Engine()
 {
 
+}
+
+void Engine::run()
+{
+  running = true;
+
+  int i = 0;
+
+  while (running)
+  {
+    i++;
+    std::cout << "i: " << i << std::endl;
+    if (i > 100)
+    {
+      running=false;
+    }
+  }
 }
