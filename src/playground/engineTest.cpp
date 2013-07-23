@@ -17,5 +17,4 @@ int main(int argc, char* argv[])
   Engine eng;
   eng.run();
   std::cout << "End" << std::endl;
-  std::cout << "test" << std::endl;
 }
